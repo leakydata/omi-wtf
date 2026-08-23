@@ -6,7 +6,7 @@ import { Footer, Header, PageIntro } from "../site-shell";
 const googleFormAction = "https://docs.google.com/forms/d/e/1FAIpQLSc7pyOtgW3Mydydy408qglGP3pj-ehPkJCNwp9zwb4i5L3eSw/formResponse";
 
 export default function ExperiencesPage() {
-  const [submitState, setSubmitState] = useState<"idle" | "opened">("idle");
+  const [submitState, setSubmitState] = useState<"idle" | "sending" | "sent">("idle");
   const [purchaseMonth, setPurchaseMonth] = useState("");
   const [moneyLost, setMoneyLost] = useState("");
 
@@ -21,8 +21,8 @@ export default function ExperiencesPage() {
           className="experience-form"
           action={googleFormAction}
           method="POST"
-          target="_blank"
-          onSubmit={() => setSubmitState("opened")}
+          target="google-form-submit"
+          onSubmit={() => setSubmitState("sending")}
         >
           <input type="hidden" name="fvv" value="1" />
           <input type="hidden" name="pageHistory" value="0" />
@@ -124,12 +124,18 @@ export default function ExperiencesPage() {
             <label className="check"><input type="checkbox" name="entry.203158980" value="This is my own experience and is accurate to the best of my knowledge." required /> This is my own experience and is accurate to the best of my knowledge.</label>
           </fieldset>
 
-          <button type="submit" className="button primary" disabled={submitState === "opened"}>
-            {submitState === "idle" ? "Send my experience" : "Check the Google confirmation tab"}
+          <button type="submit" className="button primary" disabled={submitState !== "idle"}>
+            {submitState === "idle" ? "Send my experience" : submitState === "sending" ? "Sending…" : "Response sent"}
           </button>
-          <p className={`form-status ${submitState === "opened" ? "opened" : ""}`} aria-live="polite">
-            {submitState === "opened" ? "Google opened your submission in a new tab. That page will confirm that it was recorded or tell you what needs to be corrected." : "Your answers will go privately to the Google Form and Sheet connected by the site owner. Google will open a confirmation page after you press send."}
+          <p className={`form-status ${submitState === "sent" ? "sent" : ""}`} aria-live="polite">
+            {submitState === "sent" ? "Thank you. Your answers were sent privately for review." : "Your answers will go privately to the Google Form and Sheet connected by the site owner. You will stay on this page."}
           </p>
+          <iframe
+            className="form-submit-frame"
+            name="google-form-submit"
+            title="Google Form submission result"
+            onLoad={() => { if (submitState === "sending") setSubmitState("sent"); }}
+          />
         </form>
 
         <aside className="privacy-panel">
