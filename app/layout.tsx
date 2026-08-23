@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import SiteAnalytics from "./site-analytics";
 
 const title = "Omi Pricing Record: The deal changed before delivery";
 const description = "Omi pages advertised $199 per year and 1,200 free minutes. See the receipts and why saved Omi history may make it harder to leave after a price increase.";
@@ -20,5 +21,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body>{children}</body></html>;
+  return <html lang="en"><body>{children}<SiteAnalytics /></body></html>;
 }
