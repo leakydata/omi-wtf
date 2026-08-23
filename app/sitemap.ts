@@ -1,0 +1,2 @@
+import type { MetadataRoute } from "next";
+export default function sitemap(): MetadataRoute.Sitemap { const routes = ["", "/timeline", "/pricing", "/evidence", "/correspondence", "/omi-position", "/experiences", "/resources", "/legal", "/about"]; return routes.map(route => ({ url: `https://omi.wtf${route}`, lastModified: new Date("2026-08-23"), changeFrequency: "weekly", priority: route === "" ? 1 : .7 })); }

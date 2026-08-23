@@ -1,0 +1,28 @@
+export type EvidenceStatus = "Verified" | "Awaiting public file" | "First-person account" | "Pending clarification";
+export type EvidenceItem = { id: string; date: string; source: string; category: string; status: EvidenceStatus; title: string; summary: string; publicFile: boolean; };
+
+export const evidence: EvidenceItem[] = [
+  { id: "OMI-ORDER-001", date: "August 12, 2026", source: "Order confirmation", category: "Order record", status: "Awaiting public file", title: "Order #21308 — $203.99 total", summary: "Order described by the purchaser as including an Omi wearable and a $59.99 Firmware Developer Kit.", publicFile: false },
+  { id: "OMI-WEB-001", date: "Before / around August 12, 2026", source: "Omi-controlled materials", category: "Website", status: "Awaiting public file", title: "$199 annual Unlimited representation", summary: "Preserved materials reportedly presented annual Unlimited service at approximately $199.", publicFile: false },
+  { id: "OMI-WEB-002", date: "Before / around August 12, 2026", source: "Omi-controlled materials", category: "Website", status: "Awaiting public file", title: "1,200 free monthly minutes", summary: "Earlier Omi materials reportedly represented a 1,200-minute monthly free allowance.", publicFile: false },
+  { id: "OMI-APP-001", date: "August 21, 2026", source: "Omi app", category: "App", status: "Awaiting public file", title: "$269.91 annual price shown in app", summary: "The purchaser reports that the app displayed $269.91 for annual Unlimited service before the hardware arrived.", publicFile: false },
+  { id: "OMI-EMAIL-001", date: "August 21, 2026", source: "Omi Support", category: "Email", status: "Verified", title: "Support states annual Unlimited is $199.99", summary: "Mohammed Mohsin calculated $19.99 monthly as $239.88 annually and contrasted it with $199.99 if paid annually.", publicFile: false },
+  { id: "OMI-CALL-001", date: "August 22, 2026", source: "Purchaser recollection", category: "Telephone", status: "First-person account", title: "Telephone call with Omi COO", summary: "According to the purchaser’s contemporaneous recollection, Aarav Garg said he would address the discrepancy and provide the represented price. The call was not recorded.", publicFile: false },
+  { id: "OMI-HELP-001", date: "August 22, 2026", source: "Omi Help Center", category: "Help center", status: "Awaiting public file", title: "Help Center lists updated limits and pricing", summary: "A recently updated page reportedly listed 300 basic minutes, $29 monthly Unlimited, and $269.91 annual Unlimited.", publicFile: false },
+  { id: "OMI-EMAIL-002", date: "August 23, 2026", source: "Omi Support", category: "Email", status: "Verified", title: "Omi acknowledges inconsistent published materials", summary: "Mohsin called his earlier $199.99 figure an error, identified the app price as live, and said the inconsistencies were raised internally for review.", publicFile: false },
+  { id: "OMI-EMAIL-003", date: "August 23, 2026", source: "Omi Support", category: "Email", status: "Verified", title: "Order cancelled and $203.99 refunded", summary: "Omi stated that the full order was cancelled and refunded and that the in-transit device could be returned with a prepaid label or discarded.", publicFile: false },
+  { id: "OMI-BANK-001", date: "August 23, 2026", source: "Credit union record", category: "Banking record", status: "Pending clarification", title: "$203.99 pending transaction", summary: "A pending transaction appeared after the refund communication. Its type had not yet been conclusively determined; this record does not characterize it as a new charge.", publicFile: false },
+];
+
+export const timeline = [
+  ["August 12", "Order placed", "Order #21308 purchased for $203.99 while earlier Omi materials reportedly showed approximately $199 annually and 1,200 free monthly minutes.", "OMI-ORDER-001"],
+  ["August 21", "Different price appears", "Before the hardware arrived, the Omi app displayed $269.91 for annual Unlimited service.", "OMI-APP-001"],
+  ["August 21", "Support confirms $199.99", "Omi support wrote that Unlimited was $19.99 monthly, or $199.99 if purchased annually.", "OMI-EMAIL-001"],
+  ["August 21–22", "Discrepancy raised", "The purchaser asked Omi to reconcile the app price with the earlier price and free-tier representations.", "OMI-EMAIL-001"],
+  ["August 22", "Call with Omi COO", "According to the purchaser’s contemporaneous recollection, Aarav Garg said he would fix the issue and provide the represented price.", "OMI-CALL-001"],
+  ["August 22", "Published information changes", "A recently updated Help Center page reportedly listed 300 basic minutes, $29 monthly, and $269.91 annually.", "OMI-HELP-001"],
+  ["August 23", "Omi acknowledges inconsistencies", "Support withdrew the $199.99 figure, called the app price live, and said inconsistencies in published materials were referred for review.", "OMI-EMAIL-002"],
+  ["August 23", "Order cancelled and refunded", "Omi stated that it cancelled the entire $203.99 order and did not require return of the shipped hardware.", "OMI-EMAIL-003"],
+  ["August 23", "Bank entry awaits clarification", "A pending $203.99 transaction appeared. Its type was not yet confirmed.", "OMI-BANK-001"],
+] as const;
+export const nav = [["Timeline", "/timeline"], ["Pricing", "/pricing"], ["Evidence", "/evidence"], ["Correspondence", "/correspondence"], ["Omi’s position", "/omi-position"], ["Resources", "/resources"], ["About", "/about"]] as const;
