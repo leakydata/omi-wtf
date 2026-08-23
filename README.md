@@ -27,7 +27,7 @@ The current archive intentionally contains index records and explicit missing-fi
 
 ## Publishing
 
-The app is configured for OpenAI Sites and Cloudflare-compatible output. After the initial deployment, `omi.wtf` can be attached as a custom domain once its required DNS records are available. Source can also be mirrored to GitHub for public history and outside review.
+The site is exported as static HTML and deployed to GitHub Pages by `.github/workflows/deploy-pages.yml` whenever `main` changes. The production custom domain is `omi.wtf`.
 
 ## Submission form
 
