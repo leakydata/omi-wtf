@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T21:30:22.093824+00:00",
+  "generated_at": "2026-08-23T21:33:46.217704+00:00",
   "files": [
     {
       "path": "public/evidence/app/OMI-APP-001-yearly-unlimited-269-91.png",
@@ -40,6 +40,11 @@
       "path": "public/evidence/emails/OMI-EMAIL-004-minutes-and-refund-options-redacted.pdf",
       "bytes": 354336,
       "sha256": "df77148e995ec0a8a0edb35116636160fb6baa57fa9cfdefc376aacba45fec02"
+    },
+    {
+      "path": "public/evidence/emails/OMI-EMAIL-005-refund-notification-redacted.pdf",
+      "bytes": 290297,
+      "sha256": "605b107dd1b1d7611bfb0fb48495f12a6b9c730eb87ff44998a708911bcdc615"
     },
     {
       "path": "public/evidence/orders/OMI-ORDER-001-order-21308-redacted.pdf",
