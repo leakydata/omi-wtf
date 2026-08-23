@@ -6,8 +6,9 @@ import { Footer, Header, PageIntro } from "../site-shell";
 const googleFormAction = "https://docs.google.com/forms/d/e/1FAIpQLSc7pyOtgW3Mydydy408qglGP3pj-ehPkJCNwp9zwb4i5L3eSw/formResponse";
 
 export default function ExperiencesPage() {
-  const [submitState, setSubmitState] = useState<"idle" | "sending" | "sent">("idle");
+  const [submitState, setSubmitState] = useState<"idle" | "opened">("idle");
   const [purchaseMonth, setPurchaseMonth] = useState("");
+  const [moneyLost, setMoneyLost] = useState("");
 
   return <>
     <main>
@@ -20,8 +21,8 @@ export default function ExperiencesPage() {
           className="experience-form"
           action={googleFormAction}
           method="POST"
-          target="google-form-submit"
-          onSubmit={() => setSubmitState("sending")}
+          target="_blank"
+          onSubmit={() => setSubmitState("opened")}
         >
           <input type="hidden" name="fvv" value="1" />
           <input type="hidden" name="pageHistory" value="0" />
@@ -82,7 +83,8 @@ export default function ExperiencesPage() {
                   <option>Something else</option>
                 </select>
               </label>
-              <label>Money still lost, if any<input type="number" name="entry.1366267885" min="0" step="0.01" inputMode="decimal" placeholder="e.g. 69.92 or 0" /></label>
+              <label>Money still lost, if any<input type="number" value={moneyLost} onChange={event => setMoneyLost(event.target.value)} min="0" step="0.01" inputMode="decimal" placeholder="e.g. 69.92 or 0" /></label>
+              {Number(moneyLost) > 0 ? <input type="hidden" name="entry.1366267885" value={moneyLost} /> : null}
             </div>
           </fieldset>
 
@@ -122,18 +124,12 @@ export default function ExperiencesPage() {
             <label className="check"><input type="checkbox" name="entry.203158980" value="This is my own experience and is accurate to the best of my knowledge." required /> This is my own experience and is accurate to the best of my knowledge.</label>
           </fieldset>
 
-          <button type="submit" className="button primary" disabled={submitState !== "idle"}>
-            {submitState === "idle" ? "Send my experience" : submitState === "sending" ? "Sending…" : "Response sent"}
+          <button type="submit" className="button primary" disabled={submitState === "opened"}>
+            {submitState === "idle" ? "Send my experience" : "Check the Google confirmation tab"}
           </button>
-          <p className={`form-status ${submitState === "sent" ? "sent" : ""}`} aria-live="polite">
-            {submitState === "sent" ? "Thank you. Your answers were sent privately for review." : "Your answers will go privately to the Google Form and Sheet connected by the site owner."}
+          <p className={`form-status ${submitState === "opened" ? "opened" : ""}`} aria-live="polite">
+            {submitState === "opened" ? "Google opened your submission in a new tab. That page will confirm that it was recorded or tell you what needs to be corrected." : "Your answers will go privately to the Google Form and Sheet connected by the site owner. Google will open a confirmation page after you press send."}
           </p>
-          <iframe
-            className="form-submit-frame"
-            name="google-form-submit"
-            title="Google Form submission result"
-            onLoad={() => { if (submitState === "sending") setSubmitState("sent"); }}
-          />
         </form>
 
         <aside className="privacy-panel">

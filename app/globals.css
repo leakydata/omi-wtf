@@ -140,8 +140,7 @@ legend { padding:0 8px; font:800 10px/1 ui-monospace,monospace; letter-spacing:.
 .experience-form .check { display:flex; grid-template:none; align-items:flex-start; gap:10px; color:var(--ink); font:400 13px/1.5 Arial,sans-serif; letter-spacing:0; text-transform:none; }
 .check input { width:16px; margin-top:2px; }
 .form-status { margin:0; color:var(--muted); font-size:11px; line-height:1.5; }
-.form-status.sent { padding:14px 16px; color:var(--green); background:#e4eee9; border-left:4px solid var(--green); font-size:13px; font-weight:700; }
-.form-submit-frame { position:absolute; width:1px; height:1px; border:0; opacity:0; pointer-events:none; }
+.form-status.opened { padding:14px 16px; color:var(--green); background:#e4eee9; border-left:4px solid var(--green); font-size:13px; font-weight:700; }
 .privacy-panel { position:sticky; top:24px; padding:30px; color:white; background:var(--green); }
 .privacy-panel .kicker { color:#d6c49b; }
 .privacy-panel p,.privacy-panel li { color:#d4dedb; font-size:13px; line-height:1.6; }
