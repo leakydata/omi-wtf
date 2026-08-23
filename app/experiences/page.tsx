@@ -135,6 +135,42 @@ export default function ExperiencesPage() {
                 </select>
               </label>
             </div>
+
+            <div className="form-row">
+              <label>How long have you used Omi?
+                <select name="time_using_omi" defaultValue="">
+                  <option value="" disabled>{unknown}</option>
+                  <option value="not-activated">Hardware not activated yet</option>
+                  <option value="under-month">Less than one month</option>
+                  <option value="one-to-six-months">One to six months</option>
+                  <option value="six-to-twelve-months">Six to twelve months</option>
+                  <option value="over-year">More than one year</option>
+                </select>
+              </label>
+              <label>How much history have you built?<input type="text" name="archive_size" placeholder="e.g. 400 conversations, 200 hours, 800 memories" /></label>
+            </div>
+
+            <div className="form-row">
+              <label>Have you requested a full data export?
+                <select name="export_status" defaultValue="">
+                  <option value="" disabled>{unknown}</option>
+                  <option value="no">No</option>
+                  <option value="received">Yes, and I received it</option>
+                  <option value="pending">Yes, and I am still waiting</option>
+                  <option value="unavailable">I tried but could not get one</option>
+                  <option value="unaware">I did not know that was possible</option>
+                </select>
+              </label>
+              <label>How hard would it be to leave Omi now?
+                <select name="switching_difficulty" defaultValue="">
+                  <option value="" disabled>{unknown}</option>
+                  <option value="easy">Easy</option>
+                  <option value="moderate">Manageable, but I would lose time or useful history</option>
+                  <option value="hard">Hard; I depend on the archive</option>
+                  <option value="unsure">Unsure</option>
+                </select>
+              </label>
+            </div>
           </fieldset>
 
           <div className="form-row">
@@ -152,6 +188,7 @@ export default function ExperiencesPage() {
             <label className="check"><input type="checkbox" name="has_pricing_capture" /> Screenshot or recording of pricing or service allowances</label>
             <label className="check"><input type="checkbox" name="has_app_capture" /> Screenshot of the app or account page</label>
             <label className="check"><input type="checkbox" name="has_correspondence" /> Emails, chats, or other correspondence with Omi</label>
+            <label className="check"><input type="checkbox" name="has_discord_capture" /> Discord message or screenshot about pricing</label>
             <label className="check"><input type="checkbox" name="has_payment_record" /> Redactable payment or refund record</label>
           </fieldset>
 
@@ -199,8 +236,10 @@ export default function ExperiencesPage() {
             <li>whether they saw the same price or allowance before buying;</li>
             <li>whether that representation affected the purchase;</li>
             <li>whether different terms appeared afterward;</li>
-            <li>whether the company responded similarly; and</li>
-            <li>whether consumers experienced a similar unreimbursed loss.</li>
+            <li>whether the company responded similarly;</li>
+            <li>whether consumers experienced a similar unreimbursed loss;</li>
+            <li>how much history and curation they built inside Omi; and</li>
+            <li>whether that history can be exported and used somewhere else.</li>
           </ul>
           <p>Location, timing, refunds, releases, and the checkout terms can change the answer for each person. Federal class rules also look at how many people are involved, what facts they share, and whether the proposed representatives actually match the group. <a href="https://www.law.cornell.edu/rules/frcp/rule_23" target="_blank" rel="noreferrer">Read Federal Rule 23 ↗</a></p>
 

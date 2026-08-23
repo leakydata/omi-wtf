@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 const title = "Omi Pricing Record: The deal changed before delivery";
-const description = "Omi pages advertised $199 per year and 1,200 free minutes. Before one customer's hardware arrived, the app showed $269.91. See the receipts.";
+const description = "Omi pages advertised $199 per year and 1,200 free minutes. See the receipts and the risk of letting a hardware company control the price of a growing memory archive.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://omi.wtf"),
