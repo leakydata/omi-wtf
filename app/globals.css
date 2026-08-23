@@ -116,11 +116,14 @@ table a { font:700 9px/1.5 ui-monospace,monospace; }
 .experience-form { display:grid; gap:22px; }
 .form-row { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
 .experience-form label { display:grid; gap:8px; color:var(--muted); font:700 10px/1.3 ui-monospace,monospace; letter-spacing:.07em; text-transform:uppercase; }
-input,textarea { width:100%; padding:14px 15px; color:var(--ink); background:var(--white); border:1px solid var(--rule); border-radius:0; outline:none; }
-input:focus,textarea:focus { border-color:var(--green); box-shadow:0 0 0 2px rgba(23,63,56,.12); }
+input,select,textarea { width:100%; padding:14px 15px; color:var(--ink); background:var(--white); border:1px solid var(--rule); border-radius:0; outline:none; }
+input:focus,select:focus,textarea:focus { border-color:var(--green); box-shadow:0 0 0 2px rgba(23,63,56,.12); }
 textarea { resize:vertical; }
 fieldset { display:grid; gap:14px; margin:4px 0; padding:20px; border:1px solid var(--rule); }
 legend { padding:0 8px; font:800 10px/1 ui-monospace,monospace; letter-spacing:.08em; text-transform:uppercase; }
+.screening-fieldset { gap:22px; padding:26px; border-color:var(--green); }
+.nested-fieldset { margin:0; padding:18px; background:rgba(23,63,56,.025); }
+.form-help { margin:0; color:var(--muted); font-size:13px; line-height:1.6; }
 .experience-form .check { display:flex; grid-template:none; align-items:flex-start; gap:10px; color:var(--ink); font:400 13px/1.5 Arial,sans-serif; letter-spacing:0; text-transform:none; }
 .check input { width:16px; margin-top:2px; }
 .form-status { margin:0; color:var(--muted); font-size:11px; line-height:1.5; }
@@ -128,6 +131,8 @@ legend { padding:0 8px; font:800 10px/1 ui-monospace,monospace; letter-spacing:.
 .privacy-panel .kicker { color:#d6c49b; }
 .privacy-panel p,.privacy-panel li { color:#d4dedb; font-size:13px; line-height:1.6; }
 .privacy-panel ul { padding-left:18px; }
+.privacy-panel a { color:white; text-decoration:underline; text-underline-offset:3px; }
+.privacy-panel .panel-divider { display:block; margin-top:34px; padding-top:30px; border-top:1px solid rgba(255,255,255,.22); }
 .resource-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; margin-bottom:50px; background:var(--rule); border:1px solid var(--rule); }
 .resource-grid a { min-height:240px; padding:26px; background:var(--paper); }
 .resource-grid a:hover { background:var(--white); }
