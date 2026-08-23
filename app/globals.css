@@ -99,7 +99,7 @@ footer>div>p { max-width:330px; color:#98a29f; font-size:13px; line-height:1.6; 
 .evidence-card:target { outline:3px solid rgba(155,44,44,.28); }
 .evidence-card-head { display:flex; justify-content:space-between; gap:15px; color:var(--muted); font:700 10px/1 ui-monospace,monospace; letter-spacing:.08em; text-transform:uppercase; }
 .status { padding:6px 8px; background:#e5e3dc; }
-.status.verified { color:#fff; background:var(--green2); } .status.first-person-account { color:#fff; background:#7c6b91; } .status.pending-clarification { color:#fff; background:#9b6528; }
+.status.verified { color:#fff; background:var(--green2); } .status.what-i-remember { color:#fff; background:#7c6b91; } .status.still-checking { color:#fff; background:#9b6528; }
 .evidence-card h3 { margin:24px 0 12px; font:500 28px/1.12 Georgia,serif; }
 .evidence-card>p { min-height:66px; color:var(--muted); font-size:14px; line-height:1.6; }
 .evidence-card dl { margin:24px 0 0; border-top:1px solid var(--rule); }

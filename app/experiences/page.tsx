@@ -37,7 +37,7 @@ export default function ExperiencesPage() {
             <p className="form-help">Check everything you personally remember seeing before the purchase.</p>
             <label className="check"><input type="checkbox" name="saw_199_annual" /> Unlimited for about $199 a year</label>
             <label className="check"><input type="checkbox" name="saw_1200_minutes" /> 1,200 free minutes each month</label>
-            <label className="check"><input type="checkbox" name="saw_other_promise" /> A different price or allowance</label>
+            <label className="check"><input type="checkbox" name="saw_other_promise" /> A different price or number of free minutes</label>
             <label className="check"><input type="checkbox" name="cannot_remember_promise" /> I do not remember</label>
             <label>Did that deal affect your decision to buy?
               <select name="deal_affected_purchase" required defaultValue="">
@@ -81,7 +81,7 @@ export default function ExperiencesPage() {
                 <option value="not-used">I have not started using it</option>
                 <option value="easy">Easy, I have little or no history in Omi</option>
                 <option value="some-loss">I would lose time or useful history</option>
-                <option value="hard">Hard, I depend on my Omi archive</option>
+                <option value="hard">Hard, I depend on my saved Omi history</option>
                 <option value="unsure">I am not sure</option>
               </select>
             </label>
@@ -109,12 +109,12 @@ export default function ExperiencesPage() {
           </fieldset>
 
           <button type="submit" className="button primary" disabled={!formIsLive}>{formIsLive ? "Send my experience" : "Private intake coming soon"}</button>
-          <p className="form-status">{formIsLive ? "Your answers will be sent privately. Nothing will be published without separate permission." : "Nothing you type is sent anywhere yet. The form will open after a secure submission address and privacy notice are connected."}</p>
+          <p className="form-status">{formIsLive ? "Your answers will be sent privately. I will not post them unless you later say I may." : "Nothing you type is sent anywhere yet. The form will open after I connect a safe place to receive answers and post a privacy notice."}</p>
         </form>
 
         <aside className="privacy-panel">
           <span className="kicker">WHY THESE QUESTIONS?</span>
-          <h2>An attorney needs the pattern, not a novel.</h2>
+          <h2>A lawyer needs the pattern, not a novel.</h2>
           <p>The useful comparison is simple:</p>
           <ul>
             <li>where and when people bought;</li>
@@ -125,7 +125,7 @@ export default function ExperiencesPage() {
             <li>what proof still exists; and</li>
             <li>how much Omi history makes leaving harder.</li>
           </ul>
-          <p>This form helps compare experiences. It does not decide who belongs in a lawsuit or create an attorney-client relationship.</p>
+          <p>This form helps compare experiences. It does not decide who belongs in a lawsuit. Filling it out does not make any lawyer your lawyer.</p>
 
           <span className="kicker panel-divider">KEEP PRIVATE DETAILS OUT</span>
           <h2>Do not send sensitive records yet.</h2>
@@ -133,7 +133,7 @@ export default function ExperiencesPage() {
             <li>Do not enter card or bank numbers.</li>
             <li>Do not paste private conversations recorded by Omi.</li>
             <li>Keep the original files in a safe place.</li>
-            <li>If records are needed, I will ask for redacted copies later.</li>
+            <li>If I need records, I will ask for copies with private details covered or removed.</li>
           </ul>
         </aside>
       </div>
