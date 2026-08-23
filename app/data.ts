@@ -44,4 +44,4 @@ export const timeline = [
   ["August 23", "The refund notice lands", "Omi’s automated email records the $203.99 refund and marks both items as refunded.", "OMI-EMAIL-005"],
   ["August 23", "One bank entry is still unclear", "A pending $203.99 transaction appears after the refund messages. I have not yet confirmed what type of transaction it is.", "OMI-BANK-001"],
 ] as const;
-export const nav = [["Timeline", "/timeline"], ["Pricing", "/pricing"], ["Lock-in risk", "/lock-in"], ["Evidence", "/evidence"], ["Correspondence", "/correspondence"], ["Omi’s position", "/omi-position"], ["Resources", "/resources"], ["About", "/about"]] as const;
+export const nav = [["Timeline", "/timeline"], ["Pricing", "/pricing"], ["Lock-in risk", "/lock-in"], ["Evidence", "/evidence"], ["About", "/about"], ["Correspondence", "/correspondence"], ["Omi’s position", "/omi-position"], ["Resources", "/resources"]] as const;

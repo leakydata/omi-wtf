@@ -31,4 +31,13 @@ The site is exported as static HTML and deployed to GitHub Pages by `.github/wor
 
 ## Submission form
 
-The customer-experience form is intentionally non-transmitting until a secure intake endpoint, retention policy, and privacy process are configured. Do not add a public client-side API secret.
+The customer-experience form stays non-transmitting unless the deployment has a `NEXT_PUBLIC_INTAKE_FORM_ENDPOINT` value. GitHub Actions reads that value from the repository variable `INTAKE_FORM_ENDPOINT`.
+
+To open the form:
+
+1. Create a form with a static-site form service and verify the private recipient email.
+2. Add the full submission URL as the GitHub Actions repository variable `INTAKE_FORM_ENDPOINT`.
+3. Publish a privacy notice that names the form processor, explains who receives submissions, and states how long records are kept.
+4. Run the GitHub Pages workflow again.
+
+The endpoint is necessarily visible in the published HTML. Never put a private API key in this variable. Keep file uploads off for the first version and request redacted evidence privately after reviewing a submission.
