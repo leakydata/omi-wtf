@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T21:33:46.217704+00:00",
+  "generated_at": "2026-08-23T21:39:30.165855+00:00",
   "files": [
     {
       "path": "public/evidence/app/OMI-APP-001-yearly-unlimited-269-91.png",
@@ -47,6 +47,16 @@
       "sha256": "605b107dd1b1d7611bfb0fb48495f12a6b9c730eb87ff44998a708911bcdc615"
     },
     {
+      "path": "public/evidence/help-center/OMI-HELP-001-later-300-basic.png",
+      "bytes": 192251,
+      "sha256": "8af673397fc8e41120c3151f0bb2afa6ecf7c31e89c80c551df5bc6d6c01fbcf"
+    },
+    {
+      "path": "public/evidence/help-center/OMI-HELP-002-earlier-1200-and-199.png",
+      "bytes": 176489,
+      "sha256": "a74a5e05186bb7eb1ea117e057e5d3bbbe4328d6c989b159609083e8baac99d6"
+    },
+    {
       "path": "public/evidence/orders/OMI-ORDER-001-order-21308-redacted.pdf",
       "bytes": 274286,
       "sha256": "d63d5ba8c8fb620f088b12a14bfdf67434cd0f7e03ac5a0652341f3aa263798f"
@@ -55,6 +65,21 @@
       "path": "public/evidence/regulatory/OMI-AG-001-complaint-confirmation-excerpt-redacted.pdf",
       "bytes": 141327,
       "sha256": "78276c9b09a245ea8279def7e82b40f75d6f8f9ffbcaf3f011b309b5d52dffbe"
+    },
+    {
+      "path": "public/evidence/search/OMI-SEARCH-001-google-results-199-omi-me.png",
+      "bytes": 146072,
+      "sha256": "ac682eb0830368c7a03871576c7a9d55f3475042b5aca116236b0baadce9693a"
+    },
+    {
+      "path": "public/evidence/website/OMI-WEB-001-sales-article-199-and-1200.png",
+      "bytes": 180596,
+      "sha256": "9d70c5736533675e0e44ba7514a50c43ecc9cafba23e8967b0a5de8c72a623cf"
+    },
+    {
+      "path": "public/evidence/website/OMI-WEB-002-umevo-article-199-and-1200.png",
+      "bytes": 190719,
+      "sha256": "4b2e3ca2f1ccf1cff45077fbeec00027ff59a86fa64ee5b16bd226a045895d93"
     }
   ]
 }
