@@ -6,14 +6,14 @@ export default function ExperiencesPage() {
   return <>
     <main>
       <Header />
-      <PageIntro kicker="PRIVATE INTAKE" title="Share your Omi experience">
-        <p>This questionnaire gathers facts that a consumer attorney could use to assess a possible class and individual class membership. It does not determine whether anyone legally qualifies. Nothing is published automatically.</p>
+      <PageIntro kicker="DID OMI CHANGE THE DEAL ON YOU TOO?" title="Tell me what you saw">
+        <p>If you bought Omi hardware after seeing $199 a year, 1,200 free minutes, or another promise that changed later, your story may match this one. The questions below help separate a shared pattern from a one-off mess.</p>
       </PageIntro>
       <div className="page-body form-layout">
         <form className="experience-form">
           <fieldset className="screening-fieldset">
-            <legend>Preliminary class-fit screening</legend>
-            <p className="form-help">These questions look for substantially similar purchases, representations, timing, and harm. A lawyer and ultimately a court—not this website—would define and certify any class.</p>
+            <legend>Does your story match?</legend>
+            <p className="form-help">There is no automatic score and no magic answer. These details show whether buyers saw the same promises, hit the same change, and ended up in the same position. A lawyer and a court would decide any actual class.</p>
 
             <div className="form-row">
               <label>Country at time of purchase<input type="text" name="purchase_country" autoComplete="country-name" placeholder="e.g. United States" /></label>
@@ -147,7 +147,7 @@ export default function ExperiencesPage() {
           </div>
 
           <fieldset>
-            <legend>Evidence you still have</legend>
+            <legend>What can you prove?</legend>
             <label className="check"><input type="checkbox" name="has_order_record" /> Order confirmation, receipt, or shipping record</label>
             <label className="check"><input type="checkbox" name="has_pricing_capture" /> Screenshot or recording of pricing or service allowances</label>
             <label className="check"><input type="checkbox" name="has_app_capture" /> Screenshot of the app or account page</label>
@@ -155,7 +155,7 @@ export default function ExperiencesPage() {
             <label className="check"><input type="checkbox" name="has_payment_record" /> Redactable payment or refund record</label>
           </fieldset>
 
-          <label>What happened?<textarea name="experience" rows={7} placeholder="Describe only what you personally saw or experienced. Include approximate dates, where each representation appeared, what Omi said, and any money you did not recover." /></label>
+          <label>Tell the story in your own words<textarea name="experience" rows={7} placeholder="What did you see, when did you buy, when did the deal change, what did Omi say, and did you lose any money? Stick to what you personally saw or experienced." /></label>
 
           <div className="form-row">
             <label>Would you preserve evidence and speak with a consumer attorney?
@@ -184,16 +184,16 @@ export default function ExperiencesPage() {
             <legend>Required confirmations</legend>
             <label className="check"><input type="checkbox" required /> I certify that this submission accurately describes my own experience to the best of my knowledge.</label>
             <label className="check"><input type="checkbox" required /> I authorize publication only of information I have specifically marked as public.</label>
-            <label className="check"><input type="checkbox" required /> I understand that this screening does not determine class membership or create an attorney-client relationship.</label>
+            <label className="check"><input type="checkbox" required /> I understand that this form does not decide class membership or create an attorney-client relationship.</label>
           </fieldset>
-          <button type="button" className="button primary" disabled>Secure intake opening soon</button>
-          <p className="form-status">Transmission remains disabled until a private intake endpoint, retention policy, deletion process, and consent-based attorney referral procedure are configured.</p>
+          <button type="button" className="button primary" disabled>Private intake coming soon</button>
+          <p className="form-status">Nothing you type is sent anywhere yet. The form will stay closed until there is secure storage, a deletion policy, and clear permission rules for any attorney referral.</p>
         </form>
 
         <aside className="privacy-panel">
-          <span className="kicker">POTENTIAL CLASS FIT</span>
-          <h2>Facts that may matter.</h2>
-          <p>A similar experience does not automatically make someone a class member. The most useful responses will help counsel compare:</p>
+          <span className="kicker">DOES YOUR STORY LINE UP?</span>
+          <h2>The pattern matters.</h2>
+          <p>The strongest match is not simply “I am mad at Omi.” It is a buyer who can show the same basic sequence:</p>
           <ul>
             <li>whether people bought the same hardware;</li>
             <li>whether they saw the same price or allowance before buying;</li>
@@ -202,7 +202,7 @@ export default function ExperiencesPage() {
             <li>whether the company responded similarly; and</li>
             <li>whether consumers experienced a similar unreimbursed loss.</li>
           </ul>
-          <p>Location, purchase timing, refunds, releases, and how terms were presented may require individual review. Federal class certification also examines numerosity, commonality, typicality, adequacy, and—often—predominance and superiority. <a href="https://www.law.cornell.edu/rules/frcp/rule_23" target="_blank" rel="noreferrer">Read Federal Rule 23 ↗</a></p>
+          <p>Location, timing, refunds, releases, and the checkout terms can change the answer for each person. Federal class rules also look at how many people are involved, what facts they share, and whether the proposed representatives actually match the group. <a href="https://www.law.cornell.edu/rules/frcp/rule_23" target="_blank" rel="noreferrer">Read Federal Rule 23 ↗</a></p>
 
           <span className="kicker panel-divider">BEFORE YOU SUBMIT</span>
           <h2>Protect private information.</h2>
@@ -213,7 +213,7 @@ export default function ExperiencesPage() {
             <li>Keep original files; submit copies for redaction.</li>
             <li>Nothing will be shared with an attorney without permission.</li>
           </ul>
-          <p>Submitting information does not create an attorney-client relationship or stop any legal deadline.</p>
+          <p>This form does not make me your lawyer, create an attorney-client relationship, or stop a legal deadline.</p>
         </aside>
       </div>
     </main>
