@@ -139,28 +139,31 @@ export default function ExperiencesPage() {
         </form>
 
         <aside className="privacy-panel">
-          <span className="kicker">WHY THESE QUESTIONS?</span>
-          <h2>A lawyer needs the pattern, not a novel.</h2>
-          <p>The useful comparison is simple:</p>
-          <ul>
-            <li>where and when people bought;</li>
-            <li>what Omi showed them before buying;</li>
-            <li>whether the promise mattered to the purchase;</li>
-            <li>what changed afterward;</li>
-            <li>whether anyone lost money;</li>
-            <li>what proof still exists; and</li>
-            <li>how much Omi history makes leaving harder.</li>
-          </ul>
-          <p>This form helps compare experiences. Filling it out does not make any lawyer your lawyer.</p>
+          <section>
+            <span className="kicker">WHY THESE QUESTIONS?</span>
+            <h2>A lawyer needs the pattern, not a novel.</h2>
+            <p className="panel-lede">Short answers help show whether many customers had the same experience.</p>
+            <ul className="panel-list">
+              <li><strong>The purchase</strong><span>When and where people bought</span></li>
+              <li><strong>The original deal</strong><span>What Omi showed people before they paid</span></li>
+              <li><strong>The decision</strong><span>Whether that deal helped convince them to buy</span></li>
+              <li><strong>The change</strong><span>What became different afterward</span></li>
+              <li><strong>The harm</strong><span>Money lost or useful Omi history that makes leaving harder</span></li>
+              <li><strong>The proof</strong><span>Receipts, screenshots, emails, and payment records</span></li>
+            </ul>
+            <p className="panel-note">This form helps compare experiences. Filling it out does not create a lawyer-client relationship.</p>
+          </section>
 
-          <span className="kicker panel-divider">KEEP PRIVATE DETAILS OUT</span>
-          <h2>Do not send sensitive records yet.</h2>
-          <ul>
-            <li>Do not enter card or bank numbers.</li>
-            <li>Do not paste private conversations recorded by Omi.</li>
-            <li>Keep the original files in a safe place.</li>
-            <li>If I need records, I will ask for copies with private details covered or removed.</li>
-          </ul>
+          <section className="panel-divider">
+            <span className="kicker">PROTECT YOUR PRIVACY</span>
+            <h2>Keep your records. Do not upload them yet.</h2>
+            <ul className="panel-list privacy-list">
+              <li>Do not enter card or bank numbers</li>
+              <li>Do not paste private conversations recorded by Omi</li>
+              <li>Keep the original files in a safe place</li>
+              <li>If records are needed, you will be asked for copies with private details covered or removed</li>
+            </ul>
+          </section>
         </aside>
       </div>
     </main>

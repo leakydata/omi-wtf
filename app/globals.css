@@ -154,10 +154,18 @@ legend { padding:0 8px; font:800 10px/1 ui-monospace,monospace; letter-spacing:.
 .form-submit-frame { position:absolute; width:1px; height:1px; border:0; opacity:0; pointer-events:none; }
 .privacy-panel { position:sticky; top:24px; padding:30px; color:white; background:var(--green); }
 .privacy-panel .kicker { color:#d6c49b; }
+.privacy-panel h2 { margin:20px 0 16px; font-size:clamp(30px,3vw,42px); }
 .privacy-panel p,.privacy-panel li { color:#d4dedb; font-size:13px; line-height:1.6; }
-.privacy-panel ul { padding-left:18px; }
+.privacy-panel .panel-lede { margin:0; color:white; font-size:14px; }
+.panel-list { display:grid; gap:14px; margin:24px 0 0; padding:0; list-style:none; }
+.panel-list li { position:relative; padding-left:20px; }
+.panel-list li::before { content:""; position:absolute; top:.62em; left:0; width:7px; height:7px; background:#d6c49b; border-radius:50%; }
+.panel-list strong,.panel-list span { display:block; }
+.panel-list strong { margin-bottom:2px; color:white; font-size:12px; letter-spacing:.02em; }
+.privacy-panel .panel-note { margin:26px 0 0; padding:18px 0 0; border-top:1px solid rgba(255,255,255,.18); font-size:12px; }
+.privacy-list li { color:white; }
 .privacy-panel a { color:white; text-decoration:underline; text-underline-offset:3px; }
-.privacy-panel .panel-divider { display:block; margin-top:34px; padding-top:30px; border-top:1px solid rgba(255,255,255,.22); }
+.privacy-panel .panel-divider { margin-top:36px; padding-top:32px; border-top:1px solid rgba(255,255,255,.28); }
 .resource-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; margin-bottom:50px; background:var(--rule); border:1px solid var(--rule); }
 .resource-grid a { min-height:240px; padding:26px; background:var(--paper); }
 .resource-grid a:hover { background:var(--white); }
