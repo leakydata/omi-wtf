@@ -1,4 +1,30 @@
 {
-  "generated_at": "2026-08-23T20:14:14.990797+00:00",
-  "files": []
+  "generated_at": "2026-08-23T21:11:55.763486+00:00",
+  "files": [
+    {
+      "path": "public/evidence/emails/OMI-EMAIL-000-initial-request-redacted.pdf",
+      "bytes": 87621,
+      "sha256": "f0ccc4299c3d102d7e0030a6a008364f7763c58441c34cc290026874af3c7971"
+    },
+    {
+      "path": "public/evidence/emails/OMI-EMAIL-001-annual-price-redacted.pdf",
+      "bytes": 213403,
+      "sha256": "3aa79f3cb343420b185313d83946c84ee3423929809066743acdf9eef9f9d0ad"
+    },
+    {
+      "path": "public/evidence/emails/OMI-EMAIL-002-inconsistencies-and-rescission-redacted.pdf",
+      "bytes": 575924,
+      "sha256": "c03c1d5e7d9fbf3a5e3039db106b410af44dcd9a3921c892cf50cc8d96158a00"
+    },
+    {
+      "path": "public/evidence/emails/OMI-EMAIL-003-refund-verification-redacted.pdf",
+      "bytes": 410471,
+      "sha256": "592eeeb04fdccd1ae00a392d0838d421cf5eb65145bcd400ba9909210476221d"
+    },
+    {
+      "path": "public/evidence/emails/OMI-EMAIL-004-minutes-and-refund-options-redacted.pdf",
+      "bytes": 354336,
+      "sha256": "df77148e995ec0a8a0edb35116636160fb6baa57fa9cfdefc376aacba45fec02"
+    }
+  ]
 }
