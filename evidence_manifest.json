@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T21:22:13.527729+00:00",
+  "generated_at": "2026-08-23T21:27:21.921003+00:00",
   "files": [
     {
       "path": "public/evidence/app/OMI-APP-001-yearly-unlimited-269-91.png",
@@ -10,6 +10,11 @@
       "path": "public/evidence/app/OMI-WEBAPP-001-basic-plan-1200-minutes-redacted.png",
       "bytes": 95036,
       "sha256": "aaeb9c76bd650e27a15566c888d483e42f6f89bafa0c6b38a1c19faffce1e8b4"
+    },
+    {
+      "path": "public/evidence/checkout/OMI-CHECKOUT-001-no-visible-affirmative-assent-redacted.png",
+      "bytes": 101704,
+      "sha256": "572cda90e6cf91c35b7b3ab76364270272e1f647139daa8455b163e0acb19e24"
     },
     {
       "path": "public/evidence/emails/OMI-EMAIL-000-initial-request-redacted.pdf",
