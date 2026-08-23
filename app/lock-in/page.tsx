@@ -36,8 +36,8 @@ export default function LockInPage() {
         </section>
 
         <aside className="editorial-note lockin-discord">
-          <strong>What I remember from Discord</strong>
-          <p>On Friday, August 21, I challenged the price increase in Omi’s Discord. I remember Nik Shevchenko saying the new price was still lower than he wanted. I also remember him mentioning a price near $40 a month, or about $480 a year. I did not hear him mention customer surveys, customer income, or any other study behind that number. To me, it sounded like one leader naming the price he wanted. I do not have a screenshot yet, so this is not a confirmed quote. I list it as OMI-DISCORD-001 until I can save a copy.</p>
+          <strong>What I heard during a live Omi community meeting</strong>
+          <p>This was not a written Discord message. It was spoken aloud during Omi’s weekly Discord community meeting on Friday, August 21, from 4 to 5 p.m. I challenged the price increase and remember Nik Shevchenko saying the new price was still lower than he wanted. I also remember him mentioning a price near $40 a month, or about $480 a year. I did not hear him mention customer surveys, customer income, or another study behind that number. To me, it sounded like one leader naming the price he wanted. I did not record the meeting, so there is no screenshot or audio file to post. Everyone attending could hear the discussion, and other attendees may be able to confirm what they heard.</p>
         </aside>
 
         <section className="share-band inline-share">

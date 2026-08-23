@@ -90,7 +90,8 @@ export default function ExperiencesPage() {
           <fieldset>
             <legend>5. What records do you have?</legend>
             <label className="check"><input type="checkbox" name="evidence_order" /> Order confirmation or receipt</label>
-            <label className="check"><input type="checkbox" name="evidence_screenshot" /> Pricing, Help Center, app, or Discord screenshot</label>
+            <label className="check"><input type="checkbox" name="evidence_screenshot" /> Pricing, Help Center, or app screenshot</label>
+            <label className="check"><input type="checkbox" name="heard_discord_meeting" /> I attended the Friday, August 21 Discord community meeting and heard the pricing discussion</label>
             <label className="check"><input type="checkbox" name="evidence_messages" /> Email or chat with Omi</label>
             <label className="check"><input type="checkbox" name="evidence_payment" /> Payment or refund record</label>
             <label className="check"><input type="checkbox" name="evidence_none" /> None of these</label>
