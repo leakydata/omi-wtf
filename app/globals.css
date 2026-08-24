@@ -95,6 +95,7 @@ h1,h2,h3,p { overflow-wrap:break-word; }
 footer { padding:58px max(24px,calc((100% - 1180px)/2)); display:grid; grid-template-columns:1fr 1fr; gap:48px; color:#e2e7e5; background:var(--ink); }
 footer .brand-logo { width:190px; }
 footer>div>p { max-width:330px; color:#98a29f; font-size:13px; line-height:1.6; }
+.footer-email { display:inline-block; margin-top:5px; color:white; font:700 13px/1.4 ui-monospace,monospace; text-decoration:underline; text-underline-offset:4px; }
 .footer-links { display:grid; grid-template-columns:1fr 1fr; gap:14px 34px; font-size:13px; }
 .footer-note { grid-column:1/-1; margin:0; padding-top:28px; color:#7f8a87; font-size:11px; line-height:1.6; border-top:1px solid #364340; }
 .page-intro { padding:74px 0 62px; border-bottom:3px solid var(--ink); }

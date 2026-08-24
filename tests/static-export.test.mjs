@@ -19,6 +19,7 @@ test("home page contains the core record and no starter metadata", async () => {
   assert.match(html, /\$269\.91/);
   assert.match(html, /A customer runs this site\. Omi does not\./);
   assert.match(html, /OMI\.WTF/);
+  assert.match(html, /mailto:contact@omi\.wtf/);
   assert.match(html, /https:\/\/omi\.wtf\/og\.png/);
   assert.doesNotMatch(html, /codex-preview|Starter Project|Your site is taking shape/);
 });
