@@ -9,7 +9,14 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://omi.wtf"),
   title,
   description,
-  icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
+  icons: {
+    icon: [
+      { url: "/brand/favicon.ico", sizes: "any" },
+      { url: "/brand/omi-wtf-icon-512.png", type: "image/png", sizes: "512x512" },
+    ],
+    shortcut: "/brand/favicon.ico",
+    apple: [{ url: "/brand/apple-touch-icon.png", type: "image/png", sizes: "180x180" }],
+  },
   openGraph: {
     title,
     description,

@@ -10,14 +10,15 @@ test("exports every public route", async () => {
 });
 
 test("exports crawl and domain assets", async () => {
-  await Promise.all(["robots.txt", "sitemap.xml", "CNAME", ".nojekyll", "og.png"].map(file => access(new URL(file, root))));
+  await Promise.all(["robots.txt", "sitemap.xml", "CNAME", ".nojekyll", "og.png", "brand/omi-wtf-logo.png", "brand/favicon.ico", "brand/apple-touch-icon.png"].map(file => access(new URL(file, root))));
 });
 
 test("home page contains the core record and no starter metadata", async () => {
   const html = await readFile(new URL("index.html", root), "utf8");
   assert.match(html, /Omi advertised/);
   assert.match(html, /\$269\.91/);
-  assert.match(html, /Independently operated/);
+  assert.match(html, /A customer runs this site\. Omi does not\./);
+  assert.match(html, /OMI\.WTF/);
   assert.match(html, /https:\/\/omi\.wtf\/og\.png/);
   assert.doesNotMatch(html, /codex-preview|Starter Project|Your site is taking shape/);
 });
