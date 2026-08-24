@@ -48,7 +48,7 @@ h1,h2,h3,p { overflow-wrap:break-word; }
 .numbers { display:grid; grid-template-columns:repeat(4,1fr); border-top:3px solid var(--ink); border-bottom:1px solid var(--ink); }
 .numbers article { min-height:190px; padding:24px 22px; border-right:1px solid var(--rule); }
 .numbers article:last-child { border-right:0; }
-.numbers article>span { color:var(--muted); font:800 10px/1.3 ui-monospace,monospace; letter-spacing:.1em; }
+.numbers article>span { display:block; min-height:26px; color:var(--muted); font:800 10px/1.3 ui-monospace,monospace; letter-spacing:.1em; }
 .numbers strong { display:block; margin:24px 0 18px; font:500 43px/1 Georgia,serif; }
 .numbers .discrepancy strong,.changed { color:var(--accent); }
 .numbers p { margin:0; color:var(--muted); font-size:12px; line-height:1.5; }
