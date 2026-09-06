@@ -46,6 +46,12 @@ export default function LockInPage() {
           <p>Count the device, the plan, and the hours spent building a record of your life. If a company can change the price after all of that, “just cancel” is not much of an answer.</p>
           <a className="button light-button" href="/experiences">Tell me how much history you have in Omi →</a>
         </section>
+
+        <aside className="editorial-note">
+          <strong>There is a way to hold the history yourself</strong>
+          <p>Your Omi can record onto your own computer instead, using free software, with no account and nothing to renew. It takes a graphics card or a paid key to keep up, and an afternoon to set up, and that page says so plainly rather than selling it.</p>
+          <a className="text-link" href="/keep-your-own">Keep your own recordings →</a>
+        </aside>
       </div>
     </main>
     <Footer />
