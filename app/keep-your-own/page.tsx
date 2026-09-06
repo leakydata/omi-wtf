@@ -19,7 +19,7 @@ export default function KeepYourOwnPage() {
     <main>
       <Header />
       <PageIntro kicker="ONE WAY OUT" title="Keep your own recordings">
-        <p>The problem on the rest of this site is that a company holds your history and can change what it charges for it. One answer is to hold the history yourself. Boswell is free software that records from your Omi onto your own computer, transcribes it, works out who was speaking, and lets you search all of it. This page is honest about what that costs you, because it is not free of effort.</p>
+        <p>The problem on the rest of this site is that a company holds your history and can change what it charges for it. One answer is to hold the history yourself. <a className="text-link" href="https://github.com/leakydata/boswell" target="_blank" rel="noreferrer">Boswell</a> is free software that records from your Omi onto your own computer, transcribes it, works out who was speaking, and lets you search all of it. This page is honest about what that costs you, because it is not free of effort.</p>
       </PageIntro>
       <div className="page-body">
         <section className="issue-list">
